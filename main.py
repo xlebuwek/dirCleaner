@@ -14,7 +14,7 @@ def getfiletype(name):
 
     return type
 ok = False
-while not ok: #это блять не работает почему-то
+while not ok:
     dir = Directory(MainWindow.Create_inputbox('1', '1', 'Отправить')).getdirectory()
     if os.path.isdir(dir):
         ok = True
