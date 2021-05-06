@@ -26,7 +26,8 @@ for i in os.listdir():
     if getfiletype(i) not in types and getfiletype(i) != "":
         types.append(getfiletype(i))
 for i in types:
-    os.mkdir(i)
+    if i not in os.listdir():
+        os.mkdir(i)
 
 os.chdir(dir)
 
