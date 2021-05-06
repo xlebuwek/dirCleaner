@@ -2,6 +2,9 @@ from tkinter import *
 class MainWindow:
     def __init__(self):
         None
+    def __del__(self):
+        None
+
     def Create_inputbox(title, message, button_text):
         root = Tk()
         root.title("dirCleaner")
